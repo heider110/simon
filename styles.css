@@ -33,6 +33,7 @@ footer{
   
 }
 .play:hover {background-color: #090b0967}
+
 .container {
   display: block;
   width: 70%;
@@ -69,7 +70,7 @@ footer{
 }
 
 .green {
-  
+  position: relative;
  
 }
 
