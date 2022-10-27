@@ -17,27 +17,44 @@ footer{
 
 .play{
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin-bottom:  5%;
+  font-size: 1.5rem;
+  /* margin-bottom: 5%; */
   color: #FEF2BF;
-  background-color: transparent;
+  background-color: black;
   border: none;
+  position: relative;
+  bottom: -176px;
+  left: 5px;
+  width: 176px;
+  height: 169px;
+  z-index: 1;
+  border-radius: 100%;
+  
+  
 }
-
+.play:hover {background-color: #090b0967}
 .container {
   display: block;
-  width: 90%;
+  width: 70%;
   margin: auto;
-
+  position: relative;
+  bottom: 158px;
 }
 
 .btn {
- margin: 20px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 30%;
+ margin: 0px;
+ display: inline-block;
+  height: 250px;
+  width: 250px;
+ 
+ 
+ 
+}
+.images{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 0%;
 }
 
 .game-over {
@@ -46,22 +63,32 @@ footer{
 }
 
 .red {
-  background-color: red;
+  position: relative;
+  bottom: 8px;
+  left: 12px;
 }
 
 .green {
-  background-color: green;
+  
+ 
 }
 
 .blue {
-  background-color: blue;
+  position: relative;
+    bottom: 3px;
+    left: 9px;
+    width: 244px;
+    height: 247px;
+
 }
 
 .yellow {
-  background-color: yellow;
+  position: relative;
+  bottom: 12px;
+  
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
-  background-color: grey;
+ 
 }

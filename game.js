@@ -41,35 +41,33 @@ function checkAnswer(currentLevel) {
       }, 200);
 
       startOver();
-      $(".play").show().text("Restart");
+      $(".play").show().text("Play Again");
     }
 }
 
 function newStart() {
     if (!started) {
-        $("#level-title").text("Level " + level);
+      $(".play").text("Level " + level);
         nextSequence();
         started = true;
-        $(".play").hide();
+       // $(".play").hide();
 }
 }
 function nextSequence() {
   userClickedPattern = [];
   level++;
-  $("#level-title").text("Level " + level);
+  $(".play").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
 
-  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  $("#" + randomChosenColour).fadeIn(200).fadeOut(200).fadeIn(200);
   playSound(randomChosenColour);
 }
 
 function animatePress(currentColor) {
-  $("#" + currentColor).addClass("pressed");
-  setTimeout(function () {
-    $("#" + currentColor).removeClass("pressed");
-  }, 100);
+  $("#" + currentColor).fadeIn(200).fadeOut(200).fadeIn(200);
+ 
 }
 
 function playSound(name) {
