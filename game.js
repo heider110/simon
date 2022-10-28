@@ -1,6 +1,3 @@
-
-  var welcomeMsg= "Welcome to web version of the age-old memory game Simon. You must remember and repeat a series of button presses, while the speed increases with each step. Click Play an enjoy it 😊"
-  alert(welcomeMsg);
 var buttonColours = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
@@ -9,7 +6,11 @@ var started = false;
 var level = 0;
 
 $(".play").click(function() {
-    newStart()
+    $(".welcommsg").fadeOut(500);
+    setTimeout(function () {
+      newStart();
+    }, 1500);
+    
 });
 
 
@@ -40,7 +41,7 @@ function checkAnswer(currentLevel) {
 
       setTimeout(function () {
         $("body").removeClass("game-over");
-      }, 200);
+      }, 1000);
 
       startOver();
       $(".play").show().text("Play Again");
